@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/activity_profile_view_switcher"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:inAnimation="@anim/fade_in"
+              android:outAnimation="@anim/fade_out">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/loading_anim"/>
+
+    <ViewSwitcher
+        android:id="@+id/activity_profile_view_switcher_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_error"/>
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/activity_profile_constraint_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/c_f4f4f4"
+            android:orientation="vertical"
+            tools:context=".profile.ProfileActivity"
+            tools:layout_editor_absoluteY="81dp">
+
+            <LinearLayout
+                android:id="@+id/activity_profile_linear_layout_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/activity_profile_image_view_profile_image"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="16dp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/activity_profile_text_view_name"
+                    style="@style/WavyTextAppearance.30.White"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    tools:text="Wavy App"/>
+
+            </LinearLayout>
+
+            <include layout="@layout/layout_user_info"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+    </ViewSwitcher>
+
+</ViewSwitcher>

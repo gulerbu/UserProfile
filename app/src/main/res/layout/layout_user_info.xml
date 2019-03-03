@@ -1,0 +1,107 @@
+<!-- TODO: Move custom view -->
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginTop="8dp"
+    android:elevation="4dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/activity_profile_linear_layout_container">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/layout_user_info_image_view_phone_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_phone"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/layout_user_info_text_view_phone"
+                    style="@style/WavyTextAppearance.16.Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="left"
+                    tools:text="+7 333 782–42–32"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/layout_user_info_text_view_phone_title"
+                    style="@style/WavyTextAppearance.14.Gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="left"
+                    android:text="@string/phone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/layout_user_info_image_view_email_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/ic_email"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/layout_user_info_text_view_email"
+                    style="@style/WavyTextAppearance.16.Black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="left"
+                    tools:text="+7 333 782–42–32"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/layout_user_info_text_view_email_title"
+                    style="@style/WavyTextAppearance.14.Gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:gravity="left"
+                    android:text="@string/email"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

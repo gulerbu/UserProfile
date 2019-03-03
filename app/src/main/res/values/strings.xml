@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">UserProfile</string>
+
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="delete_phone_success_message">Phone number is deleted successfully!</string>
+    <string name="delete_phone_error_message">Something went wrong while deleting phone number.</string>
+    <string name="get_user_info_error_message">Something went wrong. Tap to try again.</string>
+    <string name="retry">Retry</string>
+</resources>
